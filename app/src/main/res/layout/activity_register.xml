@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity" android:background="@android:color/holo_green_light">
+        tools:context=".RegisterActivity" android:background="@android:color/holo_green_light">
 
     <EditText
             android:layout_width="0dp"
@@ -75,4 +75,14 @@
             android:id="@+id/selectPhotoButton" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="30dp"
             app:layout_constraintTop_toTopOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:civ_border_width="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/selectPhotoButton"
+            app:layout_constraintTop_toTopOf="@+id/selectPhotoButton"
+            app:layout_constraintStart_toStartOf="@+id/selectPhotoButton"
+            app:layout_constraintEnd_toEndOf="@+id/selectPhotoButton" android:id="@+id/selectPhotoImageView"/>
+
 </android.support.constraint.ConstraintLayout>
